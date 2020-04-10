@@ -23,6 +23,20 @@ const covid19ImpactEstimator = () => {
   impact.infectionsByRequestedTime = impact.currentlyInfected * 2 ** 9;
 
   severImpact.infectionsByRequestedTime = severImpact.currentlyInfected * 2 ** 9;
+
+  impact.severeCasesByRequestedTime = impact.infectionsByRequestedTime * (15 / 100);
+
+  severImpact.severeCasesByRequestedTime = severImpact.infectionsByRequestedTime * (15 / 100);
+
+  const hospitalBedPercent = data.totalHospitalBeds * (35 / 100);
+
+  const impactHospitalBeds = impact.severeCasesByRequestedTime - hospitalBedPercent;
+
+  const severImpactHospitalBeds = severImpact.severeCasesByRequestedTime - hospitalBedPercent;
+
+  impact.hospitalBedsByRequestedTime = Math.floor(impactHospitalBeds);
+
+  severImpact.hospitalBedsByRequestedTime = Math.floor(severImpactHospitalBeds);
 };
 
 export default covid19ImpactEstimator;
