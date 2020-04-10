@@ -1,5 +1,5 @@
 const covid19ImpactEstimator = (data) => {
-  git data = {
+   data = {
     region: {
       name: 'Africa',
       avgAge: 19.7,
