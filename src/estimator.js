@@ -89,23 +89,23 @@ const covid19ImpactEstimator = (data) => {
   } = data;
   const duration = calDuration(periodType, timeToElapse);
 
-  // challange 1
+  // Calculating the value for challenge 1
   let { impact, severeImpact } = challangeOneCal(data, duration);
 
-  // challange 2
-  const forImpact = calSCandHB(
+  // Calculating the value for Challenge 2
+  const impactCase = calSCandHB(
     impact.infectionsByRequestedTime,
     totalHospitalBeds
   );
-  impact.severeCasesByRequestedTime = forImpact.severeCasesByRequestedTime;
-  impact.hospitalBedsByRequestedTime = forImpact.hospitalBedsByRequestedTime;
+  impact.severeCasesByRequestedTime = impactCase.severeCasesByRequestedTime;
+  impact.hospitalBedsByRequestedTime = impactCase.hospitalBedsByRequestedTime;
 
-  const forSevere = calSCandHB(
+  const severeCase = calSCandHB(
     severeImpact.infectionsByRequestedTime,
     totalHospitalBeds
   );
-  severeImpact.severeCasesByRequestedTime = forSevere.severeCasesByRequestedTime;
-  severeImpact.hospitalBedsByRequestedTime = forSevere.hospitalBedsByRequestedTime;
+  severeImpact.severeCasesByRequestedTime = severeCase.severeCasesByRequestedTime;
+  severeImpact.hospitalBedsByRequestedTime = severeCase.hospitalBedsByRequestedTime;
 
   // challange 3
   const casesAndDollarsFlightImplact = calCasesAndDollarFlight(
