@@ -8,46 +8,66 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="home">Home</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="Info">Information</a></li>
-          <li><a href="contact">Contact us</a></li>
-        </ul>
-      </nav>
-    </header>
+        <nav class="navBar">
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+       </nav>
+      </header>
     <main class="container">
       <form id="form" class="form">
-        <h2>Register With Us</h2>
+        <h2>Covid-19 Estimator</h2>
         <div class="form-control">
-          <label for="username">Username</label>
-          <input type="text" id="username" placeholder="Enter username" />
+          <label for="population">Population</label>
+          <input type="number" id="population" placeholder="Enter Population" />
           <small>Error Message</small>
         </div>
         <div class="form-control">
-          <label for="Email">Email</label>
-          <input type="text" id="email" placeholder="Enter Email" />
-          <small>Error Message</small>
-        </div>
-        <div class="form-control">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter password" />
-          <small>Error Message</small>
-        </div>
-        <div class="form-control">
-          <label for="password2">Comfirm Password</label>
+          <label for="timeToElapse">Time to Elapse</label>
           <input
-            type="password"
-            id="password2"
-            placeholder="Enter Password Again"
+            type="number"
+            id="timeToElapse"
+            placeholder="Enter Time To Elapse"
           />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="reportedCases">Reported Cases</label>
+          <input
+            type="number"
+            id="reportedCases"
+            placeholder="Enter Reported Cases"
+          />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="totalHosBed">Total Hospital Beds</label>
+          <input
+            type="number"
+            id="totalHosBed"
+            placeholder="Enter Total Hospital Bed"
+          />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="periodType">Period Type</label>
+          <datalist
+            type=""
+            id="totalHosBed"
+            placeholder="Enter Total Hospital Bed"
+          ></datalist>
           <small>Error Message</small>
         </div>
         <button type="submit">Submit</button>
       </form>
     </main>
     <script src="main.js"></script>
-    <footer></footer>
+    <h6>Kenneth Aladi</h6>
+    <p>&copy; 2020</p>
+    </footer>
   </body>
 </html>

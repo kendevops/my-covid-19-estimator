@@ -12,14 +12,41 @@
 body {
   background: #f9fafb;
   font-family: 'Open Sans', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   min-height: 100vh;
 }
 
+/* .navBar .main-nav {
+  float: right;
+  list-style: none;
+  max-width: 1200px;
+  margin-top: 10px;
+} */
+
+.navBar .main-nav li {
+  display: inline-block;
+  padding: 5px 20px;
+} */
+
+.navBar .main-nav li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
+/* .navBar .main-nav li a:hover {
+  background-color: orange;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+} */
+
 .container {
   background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   width: 400px;
