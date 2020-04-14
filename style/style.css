@@ -14,7 +14,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: max-content;
   min-height: 100vh;
 }
 
@@ -126,4 +125,10 @@ h2 {
   padding: 10px;
   margin-top: 20px;
   width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: block;
+  }
 }
