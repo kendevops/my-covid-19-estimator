@@ -18,13 +18,13 @@ body {
   min-height: 100vh;
 }
 
-.navBar .logo {
+/* .navBar .logo {
   margin-left: 3rem;
   margin-bottom: 2rem;
   width: 8rem;
   height: 5rem;
   float: left;
-}
+} */
 
 .navBar .main-nav {
   float: right;
@@ -118,8 +118,8 @@ h2 {
 
 .form button {
   cursor: pointer;
-  background-color: #87CEEB;
-  border: 2px solid #87CEEB;
+  background-color: #87ceeb;
+  border: 2px solid #87ceeb;
   border-radius: 4px;
   color: #fff;
   display: block;
