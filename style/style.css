@@ -93,26 +93,6 @@ h2 {
   border-color: #777;
 }
 
-.form-control.success input {
-  border-color: var(--success-color);
-}
-
-.form-control.error input {
-  border-color: var(--error-color);
-}
-
-.form-control small {
-  color: var(--error-color);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  visibility: hidden;
-}
-
-.form-control.error small {
-  visibility: visible;
-}
-
 .form button {
   cursor: pointer;
   background-color: rgba(32, 28, 41, 0.75);
