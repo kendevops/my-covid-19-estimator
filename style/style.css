@@ -10,7 +10,7 @@
 }
 
 body {
-  background: #808080;
+  background: rgba(32, 28, 41, 0.75);
   font-family: 'Open Sans', sans-serif;
   display: grid;
   grid-template-columns: 100%;
@@ -35,7 +35,7 @@ body {
   padding: 5px 20px;
 }
 .navBar .main-nav li a {
-  color: #87ceeb;
+  color: #fff;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
@@ -118,8 +118,7 @@ h2 {
 
 .form button {
   cursor: pointer;
-  background-color: #87ceeb;
-  border: 2px solid #87ceeb;
+  background-color: rgba(32, 28, 41, 0.75);
   border-radius: 4px;
   color: #fff;
   display: block;
