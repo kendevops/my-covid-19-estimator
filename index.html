@@ -9,12 +9,12 @@
   <body>
     <header>
         <nav class="navBar">
+            <img src="img/convid_19.png" alt="covid-19" class="logo">
             <ul class="main-nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Info</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">FAQ</a></li>
             </ul>
        </nav>
       </header>
@@ -23,7 +23,7 @@
         <h2>Covid-19 Estimator</h2>
         <div class="form-control">
           <label for="population">Population</label>
-          <input type="number" id="population" placeholder="Enter Population" />
+          <input type="number" id="population" data-population placeholder="Enter Population" />
           <small>Error Message</small>
         </div>
         <div class="form-control">
@@ -31,6 +31,7 @@
           <input
             type="number"
             id="timeToElapse"
+            data-time-to-elapse
             placeholder="Enter Time To Elapse"
           />
           <small>Error Message</small>
@@ -40,6 +41,7 @@
           <input
             type="number"
             id="reportedCases"
+            data-reported-case
             placeholder="Enter Reported Cases"
           />
           <small>Error Message</small>
@@ -49,20 +51,22 @@
           <input
             type="number"
             id="totalHosBed"
+            data-total-hospital-beds
             placeholder="Enter Total Hospital Bed"
           />
           <small>Error Message</small>
         </div>
-        <div class="form-control">
+        <div class="form-control" data-period-type>
           <label for="periodType">Period Type</label>
-          <datalist
-            type=""
-            id="totalHosBed"
-            placeholder="Enter Total Hospital Bed"
-          ></datalist>
+          <select name="periodType" id="totalHosBed">
+              <option value="" disabled selected>Select Period Type</option>
+              <option value="days">Days</option>
+              <option value="week">Week</option>
+              <option value="month">Month</option>
+          </select>
           <small>Error Message</small>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" data-go-estimate>Submit</button>
       </form>
     </main>
     <script src="main.js"></script>
