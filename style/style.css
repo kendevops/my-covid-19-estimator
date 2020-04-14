@@ -35,7 +35,7 @@ body {
   padding: 5px 20px;
 }
 .navBar .main-nav li a {
-  color: #add8e6;
+  color: #87ceeb;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
@@ -118,8 +118,8 @@ h2 {
 
 .form button {
   cursor: pointer;
-  background-color: #3498db;
-  border: 2px solid #3498db;
+  background-color: #87CEEB;
+  border: 2px solid #87CEEB;
   border-radius: 4px;
   color: #fff;
   display: block;
