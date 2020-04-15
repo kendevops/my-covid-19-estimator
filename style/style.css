@@ -110,4 +110,8 @@ h2 {
     display: block;
     margin: 0 auto;
   }
+
+  .container {
+    width: 40%;
+  }
 }
